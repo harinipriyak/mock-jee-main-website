@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>JEE Main 2017</title>
+        <link rel="stylesheet" href="exter.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function validateForm() {
+    var x = document.forms["myform"]["fname"].value;
+    var y = document.forms["myform"]["name"].value;
+    var z = document.forms["myform"]["gender"].value;
+    var a = document.forms["myform"]["ano"].value;
+    var w = document.forms["myform"]["state"].value;
+    var q = document.forms["myform"]["center"].value;
+    if (x == "") {
+        alert("Father's Name must be filled out");
+        return false;
+    }
+    if (y == "") {
+        alert("Candidate Name must be filled out");
+        return false;
+    }
+    if (z == "") {
+        alert("Gender must be filled out");
+        return false;
+    }
+    if (a == "") {
+        alert("Aadhaar number must be filled out");
+        return false;
+    }
+    if (w == "") {
+        alert("State of eligiblity must be filled out");
+        return false;
+    }
+    if (q == "") {
+        alert("Center must be filled out");
+        return false;
+    }
+}
+</script>
+
+
+
+
+
+    <style>
+        p{
+             margin-top:10px;
+            margin-bottom:10px;
+            font-size: 18;
+        }
+        #container{
+            background-color: #E8E8F4;
+            width:100%;
+             border: 1px solid grey;
+               padding: 5px;
+           
+        }
+        
+        .heading{
+            position: relative;
+            background-image: url("redback.jpg");
+            width:100%;
+            height:20%;
+            font-size: 25;
+            font-weight: bold;
+        }
+        .center {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        font-size: 25px;}
+        
+        p:first-child {
+    color: blue;
+} 
+.ls{
+    position: relative;
+         
+    background-color: #3f4349;
+    width:100%;
+    text-align: right;
+}
+.button {
+            background-color: #E8E8F4;
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3 {font-size: 16px;}
+        </STYLE>
+    </head>
+    <body>
+        
+         <div class="heading">
+        <BR>        
+            <div class="topleft"><img src="logo.jpg" align="left" style="width:100px;height:100px;margin-left:50px;"></div>
+           <div class="center"> <FONT COLOR=#FFF><center>JOINT ENTRANCE EXAMINATION (2017) (Main) </CENTER></FONT>
+             <FONT COLOR=#E6CE49><center>Central Board Of Secondary Education</CENTER></FONT></div>
+           <div class="topright"> <img src="rlogo.jpg" align="right" style="width:100px;height:100px;margin-right:50px;"></div>
+         </DIV>
+        <div class="ls">
+          <button class="button button3"><a href="login.php"><font color="black">LOGIN</font></a></button>
+<button class="button button3"><a href="#form"><font color="black">REGISTER</a></font></button>
+            </div>
+         <br>
+         <br/>
+         <div id="container">
+             <br>
+             <h2>Welcome to JEE Main 2017</h2>
+            <p> The Ministry of Human Resource Development, Government of India has notified following two changes in the JEE pattern for 2017:</p>
+             <ol>
+                 <li>
+                     <p>There shall be no weightage for the 12th class marks in calculating the ranks in the JEE (Main) examination</p></li>
+                     <li><p>For the candidates to qualify for the admission in the IITs/NITs/IIITs and such other CFTIs whose admissions are based on the JEE (Advanced)/JEE(Main) ranks, they should have secured at least 75% marks in the 12th class examination, or be in the top 20 percentile in the 12th class examination conducted by the respective Boards. For SC/ST students the qualifying marks would be 65% in the 12th class examination.</p></li>
+             </ol>     
+                    <br>
+                    </div>    
+<br>
+<marquee><h2><font color=#ce0e2b>Registrations open from 22nd September 2017.APPLY NOW</font></h2></marquee>
+
+<div id="form">
+
+<form name="myform" action="ins.php" method="post" onsubmit="return validateForm()">
+  <fieldset>
+    <legend><h3>JEE MAINS APPLICATION:</h3></legend>
+<div class="row">
+<div class="col-md-6">
+    Candidate name:</div>
+<div class="col-md-6">
+    <input type="text" name="name" value=""></div>
+</div>
+
+    <br><br>
+<div class="row">
+<div class="col-md-6">
+    Father's name:</div>
+<div class="col-md-6">
+    <input type="text" name="fname" value=""></div>
+</div>
+    <br><br>
+<div class="row">
+<div class="col-md-6">
+    Gender:</div>
+<div class="col-md-6">
+  <input type="radio" name="gender" value="male"> Male<br></div>
+  <input type="radio" name="gender" value="female"> Female<br>
+</div>
+    <br><br>
+<div class="row">
+<div class="col-md-6">
+    Aadhar number:</div>
+<div class="col-md-6">
+    <input type="text" name="ano" value=""></div>
+</div>
+    <br><br>
+<div class="row">
+<div class="col-md-6">
+    State of Eligibility:</div>
+<div class="col-md-6">
+    <input type="text" name="state" value=""></div>
+</div>
+    <br><br>
+    <div class="row">
+<div class="col-md-6">
+    Preferred Examination center:</div>
+<div class="col-md-6">
+    <input type="text" name="center" value=""></div>
+</div>
+    <br><br>
+    <div class="row">
+
+<div class="col-md-6"></div>
+
+<br/>
+
+
+<div class="col-md-6">
+    
+<input type="submit" value="REGISTER"></div>
+
+</fieldset>
+</form>
+
+<br/>
+
+
+
+         
+         </BODY>
+         </HTML>
+        
